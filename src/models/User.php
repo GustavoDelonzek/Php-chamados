@@ -1,12 +1,12 @@
 <?php
     
     class User{
-        public $Id;
+        public $id;
         public $email;
         public $senha;
         public $tipo;
 
-        public function __constructor($id, $email, $senha, $tipo){
+        public function __construct($id, $email, $senha, $tipo){
             $this->id = $id;
             $this->email = $email;
             $this->senha = password_hash($senha, PASSWORD_DEFAULT);
